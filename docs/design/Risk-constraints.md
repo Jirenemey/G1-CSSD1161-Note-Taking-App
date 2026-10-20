@@ -6,4 +6,4 @@
 ## Making a Web with the lowest possible errors.
 ## Next Steps
 - Check the codes everytimes
-- followe up align formation
+- followe up align structure
