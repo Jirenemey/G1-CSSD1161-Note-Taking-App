@@ -1,6 +1,9 @@
+# Risk constraints
 ## Reloading risks
-- should be able reload 
-- Reloading under 10 s
-# account creation risks
-- have a local storage for saving information
-- Limitation of using characters and some numbers
+- What risks you could face up when the web is running
+## ACCOUNT CREATION 
+- The accounts information should be saved Automatically 
+## Making a Web with the lowest possible errors.
+## Next Steps
+- Check the codes everytimes
+- followe up align formation
