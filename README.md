@@ -1,4 +1,4 @@
-## G1 CSSD1161 Note Taking App
+## G1 CSSD1161 Note Taking Websites
 
 - **In-Repo Drafts**
 - [Design: User Stories & Acceptance](docs/design/user-stories.md)
