@@ -7,4 +7,4 @@
 - [Design: Risk & constraints](docs/design/Risk-constraints.md)
 
 - **Working Agreement**
-- [Agreement Documentation](docs/working-agreement.md)
+- [Agreement Documentation](docs/working-agreements.md)
