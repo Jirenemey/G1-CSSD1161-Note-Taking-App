@@ -1,33 +1,41 @@
 # Team Design Document (with Figma)
 
 **Course:** CSSD1161 — Communication & Teamwork in Software Development  
-**Team:** _Team Name_ • **Repo:** _GitHub URL_ • **Term:** _e.g., Fall 2025_  
-**Version:** _0.1 (Draft)_ • **Last Updated:** 2025-08-31
+**Team:** _G1_ • **Repo:** [_GitHub URL_](https://github.com/Jirenemey/G1-CSSD1161-Note-Taking-App) • **Term:** _e.g., Fall 2025_  
+**Version:** _0.2_ • **Last Updated:** 2026-10-28
 
 ---
 
 ## 0) Revision History
 | Version | Date | Author | Summary of Changes |
 |---|---|---|---|
-| 0.1 | 2025-08-31 | _Name_ | Initial draft |
+| 0.1 | 2026-10-27 | _Kumanan_ | Initial draft |
+| 0.2 | 2026-10-28 | _Kumanan_ | Project Overview |
 
 ---
 
 ## 1) Project Overview
 **1.1 Problem Statement**  
 _What problem are you solving and for whom? (3–5 sentences)_
+We're solving problems for all post-secondary students that struggle with keeping track of notes.
+Users are able to organize, sort, and manage their notes efficently within our app.
+They can add tags, put them in folders and search for them.
+These notes can be downloaded for offline viewing.
 
 **1.2 Users & Context**  
-- Primary users: _e.g., first-year students managing study time_
-- User needs: _top 3_
-- Context & constraints: _devices, connectivity, accessibility considerations_
+- Primary users: _Post secondary students_
+- User needs: _Notes organization, note editing, find notes fast_
+- Context & constraints: _web, mobile, online/offline , accessibility considerations_
 
 **1.3 Value Proposition**  
 _A one-paragraph pitch: why this matters; what’s different/better._
+This note taking app matters because students often find dozens of notes per course by the end of the semester.
+Being able to organize and sort notes based on date, course, or priority help students prepare for exams.
+Students can easily put together a folder for all the material they need to review.
 
 **1.4 Goals & Non‑Goals**  
-- **Goals (in-scope):** _MVP features for this term_
-- **Non‑Goals (out-of-scope):** _Future or excluded areas_
+- **Goals (in-scope):** _Sorted notes, note editing, searching for notes, filtering notes by tag/dates_
+- **Non‑Goals (out-of-scope):** _Calendar, reminders_
 
 ---
 
