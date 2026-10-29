@@ -1,0 +1,451 @@
+
+/* =====================================
+   QUICK NOTES - COMPLETE CSS
+===================================== */
+
+/* DEFAULT DARK THEME */
+
+:root {
+    --background: #11131b;
+    --surface: #1c1f2b;
+    --card: #242837;
+    --border: #34394b;
+    --text: #f5f6fc;
+    --muted: #a3a8bc;
+    --accent: #8b78f9;
+    --accent-hover: #7460e8;
+    --shadow: rgba(0, 0, 0, 0.25);
+}
+
+/* LIGHT THEME */
+
+body.light-mode {
+    --background: #f6f7fb;
+    --surface: #ffffff;
+    --card: #ffffff;
+    --border: #e4e6ef;
+    --text: #202334;
+    --muted: #73788b;
+    --accent: #6958e8;
+    --accent-hover: #5140d0;
+    --shadow: rgba(0, 0, 0, 0.08);
+}
+
+/* =====================================
+   GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    transition: all 0.2s ease;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    padding: 24px 6%;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    min-height: 95px;
+    transition: background-color 0.3s ease;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+}
+
+header > div:not(.search-container) {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* =====================================
+   ADD NOTE BUTTON
+===================================== */
+
+#add-note-btn {
+    background: var(--accent);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#add-note-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* =====================================
+   MOON THEME BUTTON
+===================================== */
+
+.theme-toggle-btn {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 11px 14px;
+    font-size: 18px;
+}
+
+.theme-toggle-btn:hover {
+    border-color: var(--accent);
+    transform: scale(1.05);
+}
+
+.theme-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+/* =====================================
+   CENTERED SEARCH BAR
+===================================== */
+
+.search-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35%;
+    max-width: 500px;
+    padding: 0;
+    margin: 0;
+}
+
+.search-input {
+    width: 100%;
+    padding: 15px 20px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.search-input::placeholder {
+    color: var(--muted);
+}
+
+.search-input:hover {
+    border-color: var(--accent);
+}
+
+.search-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px
+        rgba(139, 120, 249, 0.15);
+}
+
+.search-input::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+
+/* =====================================
+   NOTES DASHBOARD
+===================================== */
+
+.notes-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+    padding: 40px 6%;
+    max-width: 1500px;
+    margin: auto;
+    align-items: start;
+}
+
+/* =====================================
+   NOTE CARDS
+===================================== */
+
+.note-card {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    min-height: 190px;
+    overflow-wrap: anywhere;
+    box-shadow: 0 5px 18px var(--shadow);
+    transition: all 0.25s ease;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 12px 30px var(--shadow);
+}
+
+.note-card h3 {
+    font-size: 19px;
+    margin-bottom: 14px;
+    color: var(--text);
+}
+
+.note-card p {
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+/* =====================================
+   ADD NOTE DIALOG
+===================================== */
+
+#noteDialog {
+    width: min(90%, 520px);
+    max-height: 90vh;
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    color: var(--text);
+    overflow-y: auto;
+    box-shadow: 0 25px 80px var(--shadow);
+    transition: background-color 0.3s ease;
+}
+
+#noteDialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(5px);
+}
+
+.dialog-content {
+    padding: 32px;
+}
+
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.dialog-title {
+    font-size: 23px;
+    color: var(--text);
+}
+
+/* =====================================
+   CLOSE BUTTON
+===================================== */
+
+.close-btn {
+    background: transparent;
+    color: var(--muted);
+    font-size: 22px;
+    padding: 4px 8px;
+}
+
+.close-btn:hover {
+    color: var(--text);
+}
+
+/* =====================================
+   FORM INPUTS
+===================================== */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px;
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    font: inherit;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--accent);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--muted);
+}
+
+.form-textarea {
+    min-height: 170px;
+    resize: vertical;
+}
+
+/* =====================================
+   DIALOG ACTION BUTTONS
+===================================== */
+
+.Dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-btn,
+.save-btn {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.cancel-btn {
+    background: var(--card);
+    color: var(--text);
+}
+
+.cancel-btn:hover {
+    background: var(--border);
+}
+
+.save-btn {
+    background: var(--accent);
+    color: white;
+}
+
+.save-btn:hover {
+    background: var(--accent-hover);
+}
+
+/* =====================================
+   TABLET RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 1000px) {
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .search-container {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: none;
+        order: 3;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    header > div:not(.search-container) {
+        order: 2;
+    }
+
+    .notes-grid {
+        grid-template-columns:
+            repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+/* =====================================
+   MOBILE RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 20px;
+        gap: 16px;
+    }
+
+    header h1 {
+        font-size: 21px;
+    }
+
+    header > div:not(.search-container) {
+        gap: 8px;
+    }
+
+    #add-note-btn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .theme-toggle-btn {
+        padding: 10px 12px;
+    }
+
+    .search-container {
+        width: 100%;
+    }
+
+    .search-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+        padding: 24px 20px;
+    }
+
+    .dialog-content {
+        padding: 22px;
+    }
+
+    .dialog-title {
+        font-size: 20px;
+    }
+
+    .Dialog-actions {
+        flex-wrap: wrap;
+    }
+}
