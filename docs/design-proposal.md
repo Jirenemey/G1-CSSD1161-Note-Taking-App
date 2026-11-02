@@ -98,9 +98,9 @@ The app helps students turn a growing collection of class notes into material th
 - Ensure layouts reflow on narrow screens, text can be enlarged, and touch targets are usable without precision gestures.
 
 > **Paste 2–3 key Figma screenshots below (export PNGs)**
-![Home Page](../figma/lightmode.png)
-![Dark Mode](../figma/darkmode.png)
-![Figma Flow](../figma/flow.png)
+![Home Page](docs/figma/lightmode.png)
+![Dark Mode](docs/figma/darkmode.png)
+![Figma Flow](docs/figma/flow.png)
 
 ---
 
