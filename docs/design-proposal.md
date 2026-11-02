@@ -2,7 +2,7 @@
 
 **Course:** CSSD1161 — Communication & Teamwork in Software Development  
 **Team:** G1 • **Repo:** [GitHub](https://github.com/Jirenemey/G1-CSSD1161-Note-Taking-App) • **Term:** Fall Term
-**Version:** 0.3 • **Last Updated:** 2026-10-29
+**Version:** 0.4 • **Last Updated:** 2026-11-02
 
 ---
 
@@ -12,6 +12,7 @@
 | 0.1 | 2026-10-27 | _Kumanan_ | Initial draft |
 | 0.2 | 2026-10-28 | _Kumanan_ | Project Overview |
 | 0.3 | 2026-10-29 | _Kumanan_ | Expanded proposed requirements, design notes, and test plan; team review required |
+| 0.4 | 2026-11-02 | _Kumanan_ | Added Figma screenshots |
 
 ---
 
@@ -73,20 +74,17 @@ The app helps students turn a growing collection of class notes into material th
 ---
 
 ## 3) Figma Design
-> Provide **view-only Figma links** and 2–3 **exported screenshots** per key screen.
-
 **3.1 Figma Links**  
 - **Design file:** To be added by the team (view-only link).
 - **Prototype (Present mode):** To be added by the team (view-only link).
-- **Design System / Components (optional):** To be added if created.
 
 **3.2 Screen Inventory**
-| Screen ID | Name | Purpose | Status (Draft/Final) | Link |
+| Screen ID | Name | Purpose | Status (Draft/Final) |
 |---|---|---|---|---|
-| S-1 | Notes list | Browse, search, sort, and filter the collection; open or create a note | Draft | To be added |
-| S-2 | Note editor | Create and edit a note; assign folders and tags; save or delete | Draft | To be added |
-| S-3 | Folder view | Browse notes grouped under a selected course or topic | Draft | To be added |
-| S-4 | Search results | Review matching notes or a clear no-results state | Draft | To be added |
+| S-1 | Notes list | Browse, search, sort, and filter the collection; open or create a note | Draft |
+| S-2 | Note editor | Create and edit a note; assign folders and tags; save or delete | Draft |
+| S-3 | Tag view | Browse notes grouped under a selected course or topic | Draft |
+| S-4 | Search results | Review matching notes or a clear no-results state | Draft |
 
 **3.3 User Flows**
 1. **Create and organize a note:** Open the notes list, create a note, enter a title and content, assign a folder or tags, and save. Success: the note appears in the collection and can be reopened with its content and organization intact.
@@ -100,7 +98,9 @@ The app helps students turn a growing collection of class notes into material th
 - Ensure layouts reflow on narrow screens, text can be enlarged, and touch targets are usable without precision gestures.
 
 > **Paste 2–3 key Figma screenshots below (export PNGs)**
-Add exported screenshots after the Figma screens are ready. Suggested exports: notes list, note editor, and the search or offline flow. No screenshots are attached yet.
+![Home Page](/figma/lightmode.png)
+![Dark Mode](/figma/darkmode.png)
+![Figma Flow](/figma/flow.png)
 
 ---
 
