@@ -9,7 +9,7 @@ Ronen Vovsi - ronen.vovsi@gmail.com
 Sharon Vovsi - sharon.vovsi@gmail.com   
 Amirata Kiyaniyan - amirky@my.yorku.ca
 __________________________________________
-- **Update #:** 1   |   **Date:** 2026-10-20 (YYYY-MM-DD)
+- **Update #:** 2   |   **Date:** 2026-11-03 (YYYY-MM-DD)
 
 ---
 
@@ -23,29 +23,29 @@ __________________________________________
 | week 9 | week 9 | week 9 | week 9|
 
 ### What we shipped/completed this week
-- Identified user stories to target
-- Created out GitHub repo and set up GitHub Desktop for everyone
-- Uploaded all of our documentation on to the repo and created a wiki
+- Uploaded design proposal document
+- Updated wiki with new documentation and permalinks
+- Initialized html, css, and java file
 
 ### Evidence & Links (paste URLs)
 - https://github.com/Jirenemey/G1-CSSD1161-Note-Taking-App/wiki
 - https://github.com/Jirenemey/G1-CSSD1161-Note-Taking-App
 
 ### Decisions made (owner, date)
-- Changed MVP (minimum viable product) to a beginner’s tutorial on making a note taking app (Amir, Oct 20)
--  Start the initial html file and upload to GitHub (Amir, Oct 20)
-- Setup the GitHub branches and create issues to be completed (Kumanan, Oct 20)
+- Start implementing the code by following the tutorial (Amir, Oct 30)
+- Changed prototype in figma (Amir, Nov 2)
+- Update wiki with design proposal and project updates (Kumanan, Nov 3)
 
 ### Challenges & risks (severity, mitigation)
 - Following a tutorial – (not severe, working side by side with the video) 
-- Splitting work based on the tutorial – it may be confusing to follow only some parts of the tutorial (mild severity, watching the full tutorial despite not working on it) 
-- Losing information about calendars or task details after changing our decisions (somewhat severe, need to work around adding it without following the tutorial) 
+- Changing the prototype to fit the tutorial rather than our initial idea (mild severity, some UI changes but nothing severe) 
+- Branching off from the tutorial and adding additional features we have in mind (somewhat severe, bugs will probably occur and take time to fix) 
 
 ### Plan for next week (task → owner → due date)
-- Have an in person meeting and discuss about what to work on -> Kumanan -> Oct 27 
-- Create the initial main file for the document -> Amir -> Oct 27 
-- Identify tasks that each member would want to work on -> Ronen -> Oct 27 
-- Section each part of the tutorial based on what needs to be completed -> Sharon -> Oct 27
+- Have an in person meeting and discuss about what to work on -> Kumanan -> Nov 10
+- Split the GitHub issues accordingly -> Amir -> Nov 10 
+- Start implementing the html -> Ronen -> Nov 10 
+- Desing the UI colour schemes and layout (CSS) -> Sharon -> Nov 10
 
 ## Submission Block (paste into LMS)
 - Repo (main): https://github.com/Jirenemey/G1-CSSD1161-Note-Taking-App
